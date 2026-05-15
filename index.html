@@ -14,6 +14,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"/>
 <script src="https://cdn.tailwindcss.com"></script>
+<script src="https://gumroad.com/js/gumroad.js"></script>
 <script>
   tailwind.config = {
     theme: {
@@ -97,19 +98,22 @@
         <a href="#project" class="px-7 py-3.5 rounded-full bg-gradient-to-r from-electric to-violet font-semibold text-sm hover:opacity-90 transition glow-sm">
           See the Project
         </a>
-        <a href="https://haidanny.gumroad.com" target="_blank" class="glass px-7 py-3.5 rounded-full font-semibold text-sm text-white/70 hover:text-white transition">
+        <a href="https://haidanny.gumroad.com/l/ha-ai-pet-feeder" data-gumroad-overlay-checkout="true" target="_blank" class="glass px-7 py-3.5 rounded-full font-semibold text-sm text-white/70 hover:text-white transition">
           Gumroad Store ↗
         </a>
       </div>
     </div>
     <div class="reveal relative" style="animation-delay:.2s">
       <div class="relative rounded-2xl overflow-hidden glow" style="animation:float 6s ease-in-out infinite">
-        <img src="./hero.png" alt="AI Pet Feeder with Vision Confirmation — HAiDanny" class="w-full h-auto object-cover rounded-2xl"/>
-        <!-- Overlay badge -->
-        <div class="absolute bottom-4 left-4 right-4 glass rounded-xl px-4 py-3 flex items-center gap-3">
-          <span class="w-2.5 h-2.5 rounded-full bg-green-400 animate-pulse-slow flex-shrink-0"></span>
-          <span class="text-xs font-mono text-white/80">AI Detection: <span class="text-green-400 font-bold">pet_detected: true</span></span>
-          <span class="ml-auto text-xs text-white/40">Gemini Vision</span>
+        <div class="aspect-video">
+          <iframe 
+            class="w-full h-full"
+            src="https://www.youtube.com/embed/u2tWnfJAU8g?autoplay=1&mute=1&rel=0&modestbranding=1&playlist=u2tWnfJAU8g&loop=1" 
+            title="YouTube video player" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            allowfullscreen>
+          </iframe>
         </div>
       </div>
     </div>
@@ -124,6 +128,9 @@
       <h2 class="text-4xl md:text-5xl font-black mb-4">AI Pet Feeder<br/><span class="gradient-text">with Vision Confirmation</span></h2>
       <p class="text-white/50 text-lg max-w-2xl mx-auto">A fully autonomous feeding system that doesn't just schedule meals — it sees, thinks, and confirms.</p>
     </div>
+
+    <!-- Video Embed for Demo (Optional second location or keep in hero) -->
+    <!-- I moved the embed to the hero for maximum impact as requested -->
 
     <!-- Problem / Solution cards -->
     <div class="grid md:grid-cols-2 gap-6 mb-12">
@@ -201,13 +208,9 @@
     <!-- CTA -->
     <div class="text-center reveal">
       <div class="flex flex-wrap justify-center gap-4">
-        <a href="https://haidanny.gumroad.com/l/ha-ai-pet-feeder" target="_blank" class="inline-flex items-center gap-3 px-10 py-4 rounded-full bg-gradient-to-r from-electric to-violet font-bold text-base hover:opacity-90 transition glow">
+        <a href="https://haidanny.gumroad.com/l/ha-ai-pet-feeder" data-gumroad-overlay-checkout="true" target="_blank" class="inline-flex items-center gap-3 px-10 py-4 rounded-full bg-gradient-to-r from-electric to-violet font-bold text-base hover:opacity-90 transition glow">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
           Get Full Documentation
-        </a>
-        <a href="https://www.youtube.com/watch?v=u2tWnfJAU8g" target="_blank" class="inline-flex items-center gap-3 px-10 py-4 rounded-full glass font-bold text-base hover:bg-white/10 transition">
-          <span>🎬</span>
-          Watch Funny Demo
         </a>
       </div>
       <p class="text-white/35 text-sm mt-4">Complete setup guide · Blueprint file · Configuration walkthrough</p>
