@@ -70,6 +70,7 @@
     </a>
     <div class="hidden md:flex items-center gap-8 text-sm text-white/60 font-medium">
       <a href="#project" class="hover:text-white transition">Project</a>
+      <a href="#details" class="hover:text-white transition">Details</a>
       <a href="#skills" class="hover:text-white transition">Skills</a>
       <a href="#about" class="hover:text-white transition">About</a>
     </div>
@@ -212,9 +213,202 @@
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
           Get Full Documentation
         </a>
+        <a href="#details" class="glass px-8 py-4 rounded-full font-semibold text-sm text-white/70 hover:text-white transition">
+          See All Features ↓
+        </a>
       </div>
       <p class="text-white/35 text-sm mt-4">Complete setup guide · Blueprint file · Configuration walkthrough</p>
     </div>
+  </div>
+</section>
+
+<!-- DEEP DIVE / FULL DETAILS -->
+<section id="details" class="py-28 relative">
+  <div class="max-w-6xl mx-auto px-6">
+    <div class="reveal text-center mb-16">
+      <div class="badge mb-4">Full Feature Breakdown</div>
+      <h2 class="text-4xl md:text-5xl font-black mb-4">Everything This <span class="gradient-text">Automation Does</span></h2>
+      <p class="text-white/50 text-lg max-w-2xl mx-auto">Click any feature to expand the full details. This is what makes it the smartest pet feeder on the planet.</p>
+    </div>
+
+    <!-- Accordion Feature List -->
+    <div class="space-y-3 mb-16" id="accordion">
+
+      <div class="accordion-item glass rounded-2xl overflow-hidden reveal">
+        <button onclick="toggleAccordion(this)" class="w-full flex items-center justify-between p-6 text-left hover:bg-white/5 transition">
+          <div class="flex items-center gap-4">
+            <span class="text-2xl">🐾</span>
+            <span class="font-semibold text-base">AI Pet Verification</span>
+          </div>
+          <svg class="acc-icon w-5 h-5 text-white/40 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </button>
+        <div class="acc-body hidden px-6 pb-6">
+          <p class="text-white/60 text-sm leading-relaxed mb-3">The automation doesn't trigger blindly on motion. It uses AI vision to verify your actual pet is at the bowl, ignoring shadows, robot vacuums, or passing humans.</p>
+          <div class="bg-indigo-500/10 border border-indigo-500/20 rounded-xl p-4">
+            <p class="text-indigo-300 text-xs font-semibold uppercase tracking-widest mb-2">💡 Pro Tip — Write a descriptive prompt</p>
+            <p class="text-white/55 text-xs leading-relaxed italic">"Analyze this security camera footage. I am looking for a black cat. Look for silhouettes, glowing eyes (IR reflection), or a black shape on the floor/furniture. Ignore motionless objects. Respond ONLY with exactly one of these two strings: 'black_cat_detected: true' or 'black_cat_detected: false'"</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item glass rounded-2xl overflow-hidden reveal">
+        <button onclick="toggleAccordion(this)" class="w-full flex items-center justify-between p-6 text-left hover:bg-white/5 transition">
+          <div class="flex items-center gap-4">
+            <span class="text-2xl">👀</span>
+            <span class="font-semibold text-base">Visual Bowl Confirmation — The Magic</span>
+          </div>
+          <svg class="acc-icon w-5 h-5 text-white/40 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </button>
+        <div class="acc-body hidden px-6 pb-6">
+          <p class="text-white/60 text-sm leading-relaxed">After dropping food, the system takes a second photo and uses AI to visually verify that the kibble actually made it into the bowl. No guessing. The blueprint comes with a predefined input you can customize based on your bowl setup.</p>
+        </div>
+      </div>
+
+      <div class="accordion-item glass rounded-2xl overflow-hidden reveal">
+        <button onclick="toggleAccordion(this)" class="w-full flex items-center justify-between p-6 text-left hover:bg-white/5 transition">
+          <div class="flex items-center gap-4">
+            <span class="text-2xl">🚨</span>
+            <span class="font-semibold text-base">Smart Fail-Safe & Jam Alerts</span>
+          </div>
+          <svg class="acc-icon w-5 h-5 text-white/40 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </button>
+        <div class="acc-body hidden px-6 pb-6">
+          <p class="text-white/60 text-sm leading-relaxed">If the automation triggers but the AI sees an empty bowl, it instantly sends a critical alert to your phone with the photo. The smartest part: it does <em class="text-white/80">not</em> count the grams, and it does <em class="text-white/80">not</em> reset the 2-hour feeding timer. Because the AI couldn't confirm the food, HA treats it as if the meal never happened.</p>
+        </div>
+      </div>
+
+      <div class="accordion-item glass rounded-2xl overflow-hidden reveal">
+        <button onclick="toggleAccordion(this)" class="w-full flex items-center justify-between p-6 text-left hover:bg-white/5 transition">
+          <div class="flex items-center gap-4">
+            <span class="text-2xl">🔌</span>
+            <span class="font-semibold text-base">Offline Failsafe — Never Lose Track</span>
+          </div>
+          <svg class="acc-icon w-5 h-5 text-white/40 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </button>
+        <div class="acc-body hidden px-6 pb-6">
+          <p class="text-white/60 text-sm leading-relaxed">If the device loses power or Wi-Fi, the system instantly sends an offline alert. It then follows up with a "back online" notification the exact second it reconnects.</p>
+        </div>
+      </div>
+
+      <div class="accordion-item glass rounded-2xl overflow-hidden reveal">
+        <button onclick="toggleAccordion(this)" class="w-full flex items-center justify-between p-6 text-left hover:bg-white/5 transition">
+          <div class="flex items-center gap-4">
+            <span class="text-2xl">⏳</span>
+            <span class="font-semibold text-base">The 5-Minute Smart Retry Window</span>
+          </div>
+          <svg class="acc-icon w-5 h-5 text-white/40 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </button>
+        <div class="acc-body hidden px-6 pb-6">
+          <p class="text-white/60 text-sm leading-relaxed">To prevent alert spam, the automation locks itself for 5 minutes after running. If your pet begs during those 5 minutes, nothing happens. If they come back after the 5-minute window, the AI realizes they still haven't eaten and will automatically try to feed them again.</p>
+        </div>
+      </div>
+
+      <div class="accordion-item glass rounded-2xl overflow-hidden reveal">
+        <button onclick="toggleAccordion(this)" class="w-full flex items-center justify-between p-6 text-left hover:bg-white/5 transition">
+          <div class="flex items-center gap-4">
+            <span class="text-2xl">🛑</span>
+            <span class="font-semibold text-base">Strict Diet Control — Daily Gram Limit</span>
+          </div>
+          <svg class="acc-icon w-5 h-5 text-white/40 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </button>
+        <div class="acc-body hidden px-6 pb-6">
+          <p class="text-white/60 text-sm leading-relaxed">Tracks every single gram fed throughout the day. You set your pet's exact daily limit in the setup menu (pre-filled at 104g as an example). If your pet hits that daily limit, the kitchen is safely closed until tomorrow.</p>
+        </div>
+      </div>
+
+      <div class="accordion-item glass rounded-2xl overflow-hidden reveal">
+        <button onclick="toggleAccordion(this)" class="w-full flex items-center justify-between p-6 text-left hover:bg-white/5 transition">
+          <div class="flex items-center gap-4">
+            <span class="text-2xl">⚖️</span>
+            <span class="font-semibold text-base">Dynamic Morning & Evening Portions</span>
+          </div>
+          <svg class="acc-icon w-5 h-5 text-white/40 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </button>
+        <div class="acc-body hidden px-6 pb-6">
+          <p class="text-white/60 text-sm leading-relaxed">Pets are usually hungriest right when they wake up and right before bed. The automation drops a double portion during early morning and late evening and sticks to single portions during the day. Fully configurable.</p>
+        </div>
+      </div>
+
+      <div class="accordion-item glass rounded-2xl overflow-hidden reveal">
+        <button onclick="toggleAccordion(this)" class="w-full flex items-center justify-between p-6 text-left hover:bg-white/5 transition">
+          <div class="flex items-center gap-4">
+            <span class="text-2xl">🕵️</span>
+            <span class="font-semibold text-base">Transparent AI Logging</span>
+          </div>
+          <svg class="acc-icon w-5 h-5 text-white/40 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </button>
+        <div class="acc-body hidden px-6 pb-6">
+          <p class="text-white/60 text-sm leading-relaxed">Ever wonder why a smart home automation didn't trigger? You don't have to guess. The AI writes plain-English notes directly into your Home Assistant Activity feed — like "Pet not fed! Ate recently" or "False alarm. AI rejected image" — giving you complete visibility into its decision-making.</p>
+        </div>
+      </div>
+
+      <div class="accordion-item glass rounded-2xl overflow-hidden reveal">
+        <button onclick="toggleAccordion(this)" class="w-full flex items-center justify-between p-6 text-left hover:bg-white/5 transition">
+          <div class="flex items-center gap-4">
+            <span class="text-2xl">📱</span>
+            <span class="font-semibold text-base">Rich Photo Notifications + More Features</span>
+          </div>
+          <svg class="acc-icon w-5 h-5 text-white/40 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </button>
+        <div class="acc-body hidden px-6 pb-6">
+          <ul class="space-y-2 text-white/60 text-sm">
+            <li class="flex items-start gap-2"><span class="text-green-400 mt-0.5">✓</span> Every successful feeding sends a notification with a photo of the bowl + daily gram progress report</li>
+            <li class="flex items-start gap-2"><span class="text-green-400 mt-0.5">✓</span> Nighttime lockout — set exact start/end times, feeder goes to sleep so you aren't woken up</li>
+            <li class="flex items-start gap-2"><span class="text-green-400 mt-0.5">✓</span> Customizable anti-double-feeding cooldown timer (e.g., block for 2 hours after last meal)</li>
+            <li class="flex items-start gap-2"><span class="text-green-400 mt-0.5">✓</span> "Skip-A-Meal" memory — tell the system to skip the next meal without touching the main code</li>
+            <li class="flex items-start gap-2"><span class="text-green-400 mt-0.5">✓</span> Early morning lighting — briefly flicks on a nearby light for a clear camera view (optional)</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- What's Included + Requirements -->
+    <div class="grid md:grid-cols-2 gap-6 mb-16">
+      <div class="glass rounded-2xl p-8 reveal">
+        <div class="text-2xl mb-4">📦</div>
+        <h3 class="font-bold text-xl mb-5 text-white/90">What's in the DIY Starter Kit</h3>
+        <ul class="space-y-3 text-white/65 text-sm">
+          <li class="flex items-start gap-3"><span class="text-violet-400 mt-0.5">✦</span><span><strong class="text-white/85">The Custom Blueprint:</strong> The heavily tested <code class="text-indigo-300 bg-indigo-500/10 px-1.5 py-0.5 rounded text-xs">HAiDannys_AI_Pet_Feeder.yaml</code> file, ready to import directly into your Home Assistant.</span></li>
+          <li class="flex items-start gap-3"><span class="text-violet-400 mt-0.5">✦</span><span><strong class="text-white/85">The Ultimate Setup Guide:</strong> A step-by-step PDF manual covering helpers, auto-cleanup scripts, AI prompts, and troubleshooting.</span></li>
+        </ul>
+      </div>
+      <div class="glass rounded-2xl p-8 reveal" style="transition-delay:.1s">
+        <div class="text-2xl mb-4">🛑</div>
+        <h3 class="font-bold text-xl mb-5 text-white/90">What You Need Before Buying</h3>
+        <ul class="space-y-3 text-white/65 text-sm">
+          <li class="flex items-start gap-3"><span class="text-orange-400 mt-0.5">→</span>A working <strong class="text-white/85">Home Assistant</strong> hub</li>
+          <li class="flex items-start gap-3"><span class="text-orange-400 mt-0.5">→</span>A <strong class="text-white/85">Wi-Fi Smart Feeder + Pet Camera</strong> already integrated into your HA dashboard</li>
+          <li class="flex items-start gap-3"><span class="text-orange-400 mt-0.5">→</span>An active <strong class="text-white/85">AI Vision API Key</strong> (OpenAI, Anthropic, or Google) connected via the LLM Vision integration</li>
+        </ul>
+        <p class="text-white/35 text-xs mt-5 italic">Don't have these set up yet? The VIP package includes a 1-on-1 call where we do it together.</p>
+      </div>
+    </div>
+
+    <!-- Pricing Tiers -->
+    <div class="reveal mb-4">
+      <div class="text-sm text-white/40 uppercase tracking-widest font-semibold mb-8 text-center">Choose Your Package</div>
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="glass rounded-2xl p-8 border border-white/8 hover:border-indigo-500/30 transition">
+          <div class="text-3xl font-black text-white mb-1">$50</div>
+          <div class="text-indigo-300 font-bold text-lg mb-3">DIY Starter Kit</div>
+          <p class="text-white/50 text-sm mb-6">The complete Blueprint YAML + the 7-Step PDF Setup Guide. Perfect for users who already know their way around Home Assistant.</p>
+          <a href="https://haidanny.gumroad.com/l/ha-ai-pet-feeder" data-gumroad-overlay-checkout="true" target="_blank" class="block text-center py-3 px-6 rounded-full border border-indigo-500/40 text-indigo-300 font-semibold text-sm hover:bg-indigo-500/10 transition">
+            Get Starter Kit →
+          </a>
+        </div>
+        <div class="glass-strong rounded-2xl p-8 border border-violet-500/30 glow relative">
+          <div class="absolute -top-3 right-6 badge text-xs">Most Value</div>
+          <div class="text-3xl font-black text-white mb-1">$150</div>
+          <div class="gradient-text font-bold text-lg mb-3">VIP "Done-For-You" Setup</div>
+          <p class="text-white/50 text-sm mb-6">Everything in the Starter Kit, PLUS a 1-on-1 video call with HAiDanny. I will personally log in with you and get the AI automation running perfectly on your machine.</p>
+          <a href="https://haidanny.gumroad.com/l/ha-ai-pet-feeder" data-gumroad-overlay-checkout="true" target="_blank" class="block text-center py-3 px-6 rounded-full bg-gradient-to-r from-electric to-violet font-semibold text-sm hover:opacity-90 transition glow-sm">
+            Book VIP Setup →
+          </a>
+        </div>
+      </div>
+    </div>
+
   </div>
 </section>
 
@@ -288,6 +482,21 @@
     entries.forEach(e => { if(e.isIntersecting){ e.target.classList.add('visible'); } });
   }, { threshold: 0.1 });
   document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+  // Accordion toggle
+  function toggleAccordion(btn) {
+    const body = btn.nextElementSibling;
+    const icon = btn.querySelector('.acc-icon');
+    const isOpen = !body.classList.contains('hidden');
+    // Close all
+    document.querySelectorAll('.acc-body').forEach(b => b.classList.add('hidden'));
+    document.querySelectorAll('.acc-icon').forEach(i => i.style.transform = '');
+    // Open clicked if it was closed
+    if (!isOpen) {
+      body.classList.remove('hidden');
+      icon.style.transform = 'rotate(180deg)';
+    }
+  }
 </script>
 </body>
 </html>
